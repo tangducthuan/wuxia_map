@@ -3,33 +3,58 @@
 <title>Wuxia map info</title>
 <head>
 <style>
-#imgDiv {
-  width: 100%;
-  padding: 50px 0;
-  text-align: center;
-  align: center;
-  margin-top: 20px;
+img {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	max-width:800px
+}
+button {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 10px;
+	margin-bottom: 10px;
 }
 </style>
 </head>
-<body>
-<button>Côn Luân</button>
+<body
+	style="overflow: scroll">
+
 <div>
+	<button onclick="toggleVisible('con_luan')">Côn Luân</button>
+	<img id="con_luan" style="display:none" src="https://github.com/tangducthuan/wuxia_map/raw/master/imgs/ConLuan.jpg"/>
+</div>
+<div>
+	<button onclick="toggleVisible('yenvan')">Yến Vân</button>
+	<img id="yenvan" style="display:none" src="https://github.com/tangducthuan/wuxia_map/raw/master/imgs/YenVan.jpg"/>
+</div>
+<div>
+	<button onclick="toggleVisible('telo')">Tề Lỗ</button>
+	<img id="telo" style="display:none" src="https://github.com/tangducthuan/wuxia_map/raw/master/imgs/TeLo.jpg"/>
+</div>
+<div>
+	<button onclick="toggleVisible('tayluong')">Tây Lương</button>
+	<img id="tayluong" style="display:none" src="https://github.com/tangducthuan/wuxia_map/raw/master/imgs/TayLuong.jpg"/>
+</div>
+<div>
+	<button onclick="toggleVisible('quynhnha')">Quỳnh Nha</button>
+	<img id="quynhnha" style="display:none" src="https://github.com/tangducthuan/wuxia_map/raw/master/imgs/QuynhNha.jpg"/>
+</div>
+<div>
+	<button onclick="toggleVisible('batu')">Ba Tư</button>
+	<img id="batu" style="display:none" src="https://github.com/tangducthuan/wuxia_map/raw/master/imgs/BaTu.jpg"/>
+</div>
+<div>
+	<button onclick="toggleVisible('caoly')">Cao Ly</button>
+	<img id="caoly" style="display:none" src="https://github.com/tangducthuan/wuxia_map/raw/master/imgs/CaoLy.jpg"/>
 </div>
 
-
-
-
-
-
-
-
-
-
-
 <script>
-function toggleVisible(id) {
-  var x = document.getElementById(id);
+function toggleVisible(imgId) {
+  var x = document.getElementById(imgId);
   if (x.style.display === "none") {
     x.style.display = "block";
   } else {
