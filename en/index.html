@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Wuxia map info</title>
+<head>
+<style>
+img {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	max-width:900px
+}
+button {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+</style>
+</head>
+<body
+	style="overflow: scroll">
+
+<div>
+	<button onclick="toggleVisible('con_luan')">KunLun</button>
+	<img id="con_luan" style="display:none" src="imgs/KunLun.jpg"/>
+</div>
+<div>
+	<button onclick="toggleVisible('yenvan')">YanYun</button>
+	<img id="yenvan" style="display:none" src="imgs/YanYun.jpg"/>
+</div>
+<div>
+	<button onclick="toggleVisible('telo')">QiLu</button>
+	<img id="telo" style="display:none" src="imgs/QiLu.jpg"/>
+</div>
+<div>
+	<button onclick="toggleVisible('tayluong')">XiLiang</button>
+	<img id="tayluong" style="display:none" src="imgs/XiLiang.jpg"/>
+</div>
+<div>
+	<button onclick="toggleVisible('quynhnha')">QiongYa</button>
+	<img id="quynhnha" style="display:none" src="imgs/QiongYa.jpg"/>
+</div>
+<div>
+	<button onclick="toggleVisible('batu')">Persia</button>
+	<img id="batu" style="display:none" src="imgs/Persia.jpg"/>
+</div>
+<div>
+	<button onclick="toggleVisible('caoly')">Goryeo</button>
+	<img id="caoly" style="display:none" src="imgs/Goryeo.jpg"/>
+</div>
+
+<script>
+function toggleVisible(imgId) {
+  var x = document.getElementById(imgId);
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+</script>
+</body>
+</html>
